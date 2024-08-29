@@ -13,6 +13,15 @@
 		204AEC612C76DA96003B15C1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 204AEC602C76DA96003B15C1 /* Base */; };
 		204AEC632C76DA99003B15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204AEC622C76DA99003B15C1 /* Assets.xcassets */; };
 		204AEC662C76DA99003B15C1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 204AEC652C76DA99003B15C1 /* Base */; };
+		204AEC7B2C76E3C6003B15C1 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204AEC7A2C76E3C6003B15C1 /* CustomButton.xib */; };
+		204AEC7C2C76E3C6003B15C1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AEC792C76E3C6003B15C1 /* CustomButton.swift */; };
+		207423FC2C79477100F87118 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207423FB2C79477100F87118 /* UIView+extensions.swift */; };
+		207423FF2C794CB400F87118 /* ButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207423FE2C794CB400F87118 /* ButtonBuilder.swift */; };
+		208BA9152C8010B4002186B1 /* View+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BA9142C8010B4002186B1 /* View+Designable.swift */; };
+		208BA9172C80183B002186B1 /* Button+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BA9162C80183B002186B1 /* Button+Designable.swift */; };
+		208BA9192C801D23002186B1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BA9182C801D23002186B1 /* HeaderView.swift */; };
+		208BA91B2C801D2A002186B1 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208BA91A2C801D2A002186B1 /* HeaderView.xib */; };
+		208BA91D2C802113002186B1 /* HeaderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BA91C2C802113002186B1 /* HeaderProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		204AEC622C76DA99003B15C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204AEC652C76DA99003B15C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204AEC672C76DA99003B15C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204AEC792C76E3C6003B15C1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		204AEC7A2C76E3C6003B15C1 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		207423FB2C79477100F87118 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		207423FE2C794CB400F87118 /* ButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBuilder.swift; sourceTree = "<group>"; };
+		208BA9142C8010B4002186B1 /* View+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Designable.swift"; sourceTree = "<group>"; };
+		208BA9162C80183B002186B1 /* Button+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Designable.swift"; sourceTree = "<group>"; };
+		208BA9182C801D23002186B1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		208BA91A2C801D2A002186B1 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		208BA91C2C802113002186B1 /* HeaderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,112 @@
 		204AEC582C76DA96003B15C1 /* ReusableUI */ = {
 			isa = PBXGroup;
 			children = (
-				204AEC592C76DA96003B15C1 /* AppDelegate.swift */,
-				204AEC5B2C76DA96003B15C1 /* SceneDelegate.swift */,
-				204AEC5D2C76DA96003B15C1 /* ViewController.swift */,
-				204AEC5F2C76DA96003B15C1 /* Main.storyboard */,
-				204AEC622C76DA99003B15C1 /* Assets.xcassets */,
-				204AEC642C76DA99003B15C1 /* LaunchScreen.storyboard */,
-				204AEC672C76DA99003B15C1 /* Info.plist */,
+				204AEC6D2C76DFD8003B15C1 /* start */,
+				207423F92C79471B00F87118 /* helpers */,
+				204AEC6F2C76E277003B15C1 /* Secctions */,
+				204AEC712C76E2A1003B15C1 /* Commons */,
+				204AEC6E2C76DFF2003B15C1 /* Resources */,
 			);
 			path = ReusableUI;
+			sourceTree = "<group>";
+		};
+		204AEC6D2C76DFD8003B15C1 /* start */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC592C76DA96003B15C1 /* AppDelegate.swift */,
+				204AEC5B2C76DA96003B15C1 /* SceneDelegate.swift */,
+			);
+			path = start;
+			sourceTree = "<group>";
+		};
+		204AEC6E2C76DFF2003B15C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC672C76DA99003B15C1 /* Info.plist */,
+				204AEC622C76DA99003B15C1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		204AEC6F2C76E277003B15C1 /* Secctions */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC702C76E284003B15C1 /* Launch */,
+				204AEC5F2C76DA96003B15C1 /* Main.storyboard */,
+				204AEC5D2C76DA96003B15C1 /* ViewController.swift */,
+			);
+			path = Secctions;
+			sourceTree = "<group>";
+		};
+		204AEC702C76E284003B15C1 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC642C76DA99003B15C1 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		204AEC712C76E2A1003B15C1 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC722C76E2B6003B15C1 /* Button */,
+				207423FD2C794C9C00F87118 /* ButtonBuilder */,
+				204AEC732C76E2BE003B15C1 /* Header */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		204AEC722C76E2B6003B15C1 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				204AEC792C76E3C6003B15C1 /* CustomButton.swift */,
+				204AEC7A2C76E3C6003B15C1 /* CustomButton.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		204AEC732C76E2BE003B15C1 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				208BA9182C801D23002186B1 /* HeaderView.swift */,
+				208BA91A2C801D2A002186B1 /* HeaderView.xib */,
+				208BA91C2C802113002186B1 /* HeaderProtocols.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		207423F92C79471B00F87118 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				208BA9132C801029002186B1 /* IBDesignable */,
+				207423FA2C79472800F87118 /* Extensions */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		207423FA2C79472800F87118 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				207423FB2C79477100F87118 /* UIView+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		207423FD2C794C9C00F87118 /* ButtonBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				207423FE2C794CB400F87118 /* ButtonBuilder.swift */,
+			);
+			path = ButtonBuilder;
+			sourceTree = "<group>";
+		};
+		208BA9132C801029002186B1 /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				208BA9142C8010B4002186B1 /* View+Designable.swift */,
+				208BA9162C80183B002186B1 /* Button+Designable.swift */,
+			);
+			path = IBDesignable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				204AEC632C76DA99003B15C1 /* Assets.xcassets in Resources */,
+				208BA91B2C801D2A002186B1 /* HeaderView.xib in Resources */,
 				204AEC662C76DA99003B15C1 /* Base in Resources */,
+				204AEC7B2C76E3C6003B15C1 /* CustomButton.xib in Resources */,
 				204AEC612C76DA96003B15C1 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207423FC2C79477100F87118 /* UIView+extensions.swift in Sources */,
+				208BA9192C801D23002186B1 /* HeaderView.swift in Sources */,
+				208BA9152C8010B4002186B1 /* View+Designable.swift in Sources */,
 				204AEC5E2C76DA96003B15C1 /* ViewController.swift in Sources */,
 				204AEC5A2C76DA96003B15C1 /* AppDelegate.swift in Sources */,
 				204AEC5C2C76DA96003B15C1 /* SceneDelegate.swift in Sources */,
+				208BA91D2C802113002186B1 /* HeaderProtocols.swift in Sources */,
+				204AEC7C2C76E3C6003B15C1 /* CustomButton.swift in Sources */,
+				207423FF2C794CB400F87118 /* ButtonBuilder.swift in Sources */,
+				208BA9172C80183B002186B1 /* Button+Designable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +418,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T73X5U8FS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReusableUI/Info.plist;
+				INFOPLIST_FILE = ReusableUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +446,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T73X5U8FS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReusableUI/Info.plist;
+				INFOPLIST_FILE = ReusableUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="ReusableUI" customModuleProvider="target">
+            <connections>
+                <outlet property="backItem" destination="6Tf-0h-Zxu" id="rOI-Me-ZSe"/>
+                <outlet property="leftItem" destination="mWb-6o-axh" id="yrl-8j-SmY"/>
+                <outlet property="rightItem" destination="HsI-n1-IBf" id="3L1-Di-VcK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tf-0h-Zxu">
+                    <rect key="frame" x="16.000000000000004" y="25.333333333333332" width="49.333333333333343" height="49.333333333333343"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6Tf-0h-Zxu" secondAttribute="height" multiplier="1:1" id="jUF-Je-GYV"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                    <connections>
+                        <action selector="backEvent:" destination="-1" eventType="touchUpInside" id="Wy0-6P-sru"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsI-n1-IBf">
+                    <rect key="frame" x="326" y="24.666666666666671" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HsI-n1-IBf" secondAttribute="height" multiplier="1:1" id="2pY-QA-Lht"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal" catalog="system"/>
+                    <connections>
+                        <action selector="rightEvent:" destination="-1" eventType="touchUpInside" id="J0z-mr-4XB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-6o-axh">
+                    <rect key="frame" x="267" y="24.666666666666671" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mWb-6o-axh" secondAttribute="height" multiplier="1:1" id="FF0-fj-pRj"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="magnifyingglass.circle" catalog="system"/>
+                    <connections>
+                        <action selector="leftEvent:" destination="-1" eventType="touchUpInside" id="dC7-O6-CzP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mWb-6o-axh" firstAttribute="top" secondItem="HsI-n1-IBf" secondAttribute="top" id="Fwb-ZO-EiL"/>
+                <constraint firstItem="HsI-n1-IBf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HtD-Gv-bhl"/>
+                <constraint firstItem="6Tf-0h-Zxu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Udi-l5-OC4"/>
+                <constraint firstItem="mWb-6o-axh" firstAttribute="bottom" secondItem="HsI-n1-IBf" secondAttribute="bottom" id="X0u-v4-Qjo"/>
+                <constraint firstItem="HsI-n1-IBf" firstAttribute="leading" secondItem="mWb-6o-axh" secondAttribute="trailing" constant="8" symbolic="YES" id="dDB-Gd-b5b"/>
+                <constraint firstItem="6Tf-0h-Zxu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="rpl-h6-Qck"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HsI-n1-IBf" secondAttribute="trailing" constant="16" id="zcH-3C-ycF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="38.931297709923662" y="171.83098591549296"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
