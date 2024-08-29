@@ -24,8 +24,27 @@
                                     <constraint firstAttribute="width" constant="393" id="hYp-8k-QmJ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDg-0F-lBt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="66"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="eaA-ss-VNJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-ys-F00" customClass="HeaderView" customModule="ReusableUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="85.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="styleHeader">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="showButtons">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-z2-meb" customClass="ViewCorners" customModule="ReusableUI" customModuleProvider="target">
-                                <rect key="frame" x="61" y="444" width="240" height="128"/>
+                                <rect key="frame" x="76" y="545" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -37,62 +56,25 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nk-NV-0Ti" customClass="RoundedButton" customModule="ReusableUI" customModuleProvider="target">
-                                <rect key="frame" x="159" y="249" width="75" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Jxf-o1-z7m"/>
-                                    <constraint firstAttribute="height" constant="35" id="cmN-FC-vgc"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusIB">
-                                        <real key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemIndigoColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDg-0F-lBt">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="66"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="eaA-ss-VNJ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-ys-F00" customClass="HeaderView" customModule="ReusableUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="85.333333333333314"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BuQ-ys-F00" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Bej-Ee-SD8"/>
-                            <constraint firstItem="4Nk-NV-0Ti" firstAttribute="top" secondItem="gkL-z2-meb" secondAttribute="bottom" constant="-323" id="G1L-Tc-Nso"/>
                             <constraint firstItem="RDg-0F-lBt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NRK-ju-BnE"/>
                             <constraint firstItem="BuQ-ys-F00" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VSe-V8-BjR"/>
                             <constraint firstItem="kT9-gN-1a1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aEF-Lv-siq"/>
                             <constraint firstItem="BuQ-ys-F00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eCw-J3-n6T"/>
-                            <constraint firstItem="4Nk-NV-0Ti" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="fvC-bA-cBG"/>
                             <constraint firstItem="RDg-0F-lBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g4z-gL-SvG"/>
                             <constraint firstItem="RDg-0F-lBt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i4z-SH-wuT"/>
                             <constraint firstItem="BuQ-ys-F00" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kEC-Xm-xOq"/>
-                            <constraint firstItem="kT9-gN-1a1" firstAttribute="top" secondItem="4Nk-NV-0Ti" secondAttribute="bottom" constant="436" id="lor-JY-vML"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Nk-NV-0Ti" secondAttribute="trailing" constant="159" id="odz-In-EVc"/>
-                            <constraint firstItem="gkL-z2-meb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="tvy-2i-x9U"/>
-                            <constraint firstItem="gkL-z2-meb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-15.5" id="wGS-qj-VpN"/>
+                            <constraint firstItem="gkL-z2-meb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="486" id="tvy-2i-x9U"/>
+                            <constraint firstItem="gkL-z2-meb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="wGS-qj-VpN"/>
                             <constraint firstItem="kT9-gN-1a1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zyQ-ck-XjI"/>
                         </constraints>
                     </view>
@@ -111,9 +93,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
